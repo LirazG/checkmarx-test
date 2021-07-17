@@ -1,0 +1,14 @@
+.search-bar {
+    height: 4rem;
+    width:100%;
+    border: 2px solid rgba($gray-border, $mid-opacity);
+    border-radius: 4px;
+    overflow: hidden;
+    padding-left: 1rem;
+    @include displayFlex(row,center,center);
+
+    &__input {
+        height: 100%;
+        flex-grow: 1;
+    }
+}

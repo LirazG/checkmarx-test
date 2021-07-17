@@ -1,0 +1,13 @@
+.universities-page {
+    background-color: $gary-bg;
+    width: 100%;
+    min-height: calc(100vh - #{$navbar-height});
+    @include displayFlex(row, center, flex-start);
+
+    &__content{
+        width: 75vw;
+        height: 100%;
+        padding: 2rem;
+        @include displayFlex(column, center, center);
+    }
+}

@@ -1,0 +1,11 @@
+// abstracts
+@import './abstracts/mixins';
+@import './abstracts/variables';
+// global
+@import './global/reset';
+@import './global/search-bar';
+@import './global/navbar';
+@import './global/spinner';
+//layouts
+@import './layouts/home-page';
+@import './layouts/universities-page';

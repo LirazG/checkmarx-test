@@ -1,0 +1,29 @@
+.navbar {
+    height: 4rem;
+    width: 100%;
+
+    &__placeholder {
+        height: 100%;
+    }
+
+    &__content {
+        height: 4rem;
+        width: 100%;
+        background-color: $app-blue;
+        position: fixed;
+        left: 0;
+        top: 0;
+        padding: 0 1rem;
+        z-index: 100;
+
+        @include displayFlex(row, space-between, center);
+
+        &__img {
+            height: 90%;
+        }
+
+        &__text {
+            color: $white-text;
+        }
+    }
+}
