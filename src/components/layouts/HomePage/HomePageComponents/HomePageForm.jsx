@@ -5,6 +5,8 @@ import { FormControl, TextField, Button } from '@material-ui/core';
 import { useDispatch } from "react-redux";
 //actions
 import { setUserInfo } from '../../../../actions/user_info_actions';
+//config
+import { USER_NAME } from '../../../../config/generalConfigs';
 
 const HomePageForm = () => {
 
@@ -26,7 +28,7 @@ const HomePageForm = () => {
             setInputError('Please enter full name');
             return;
         }
-        localStorage.setItem('checkmarxUniversityUser', userName);
+        localStorage.setItem(USER_NAME, userName);
         dispatch(setUserInfo(userName));
     }
 

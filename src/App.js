@@ -11,6 +11,8 @@ import './styles/main.scss';
 import { useSelector, useDispatch } from "react-redux";
 //actions
 import { setUserInfo } from './actions/user_info_actions';
+//configs
+import { USER_NAME } from './config/generalConfigs';
 
 const App = () => {
 
@@ -25,7 +27,7 @@ const App = () => {
 	}, [userName]);
 
 	useEffect(() => {
-		const userName = localStorage.getItem('checkmarxUniversityUser');
+		const userName = localStorage.getItem(USER_NAME);
 		if (userName) {
 			dispatch(setUserInfo(userName));
 		}
